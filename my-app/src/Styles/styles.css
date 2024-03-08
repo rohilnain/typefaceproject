@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Title section */
+.chat-list-title {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Add border */
+  }
+  
+  .app-logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+  }
+  
+  h1 {
+    margin: 0; /* Remove default margin */
+  }
+
+
+/* ChatList */
+.chat-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+  }
+
+  .chat-list div {
+    display:flex;
+    justify-content:space-around;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc; /* Add border to each chat item */
+    border-radius: 5px; /* Add border radius */
+  }
+  
+  .chat-list button {
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .chat-list button:hover {
+    background-color: #45a049;
+  }
+  
+  /* ChatWindow */
+  .chat-window {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .message div {
+    margin-bottom: 5px;
+  }
+
+  /* SendMessage */
+  
+  .send-message-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message-input {
+    flex: 1;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .send-button {
+    height: 40px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px; 
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
