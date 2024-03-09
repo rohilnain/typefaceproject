@@ -7,7 +7,6 @@ const ReceiveMessage = ({ chats, selectedChat, setChats }) => {
 
       const updatedChats = chats.map(chat => {
         if (chat.id === selectedChat) {
-          // Simulating a received message
           return {
             ...chat,
             messages: [
@@ -20,12 +19,13 @@ const ReceiveMessage = ({ chats, selectedChat, setChats }) => {
       });
 
       setChats(updatedChats);
-    }, 5000); // Simulate receiving messages every 5 seconds
+    }, 5000);
 
-    return () => clearInterval(intervalId); // Cleanup function to clear interval on unmount
+    return () => clearInterval(intervalId); 
   }, [chats, selectedChat, setChats]);
 
-  return null; // Since this component is responsible for side effects only, it doesn't render anything
+  return null; 
 };
 
 export default ReceiveMessage;
+ 
